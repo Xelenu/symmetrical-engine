@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOR SALE</title>
-    <link rel="icon" type="image/x-icon" href="https://www.cloudflare.com/favicon.ico">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: darkgreen;
-        }
-        .sale-text {
-            padding: 20px;
-            border: 5px solid green;
-            color: black;
-            font-size: 24px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restricted</title>
+  <link rel="icon" type="image/x-icon" href="https://blocked.goguardian.com/favicon.ico">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="sale-text">
-        This website is for sale!
-    </div>
+  <iframe src="https://blocked.goguardian.com/?ctx=YWZpPTExOTkxNDY1JmFwaT0xMzI1MTMmb2k9MjQyMTQ3OTcxMzgmb3U9aHR0cHMlM0ElMkYlMkZkaXNjb3JkLmNvbSUyRmNoYW5uZWxzJTJGJTQwbWUmcnM9QURNSU5fU0lURV9GSUxURVImc3Q9Y2hyb21pdW0tbSZ2PTE%3D&sum=60e20e95" frameborder="0"></iframe>
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '/') {
+        const newWindow = window.open('about:blank', '_blank');
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://chromebook.digital/';
+        iframe.style.width = '100vw';
+        iframe.style.height = '100vh';
+        iframe.style.position = 'fixed';
+        iframe.style.inset = '0';
+        iframe.style.border = 'none';
+        iframe.style.outline = 'none';
+        newWindow.document.body.appendChild(iframe);
+      }
+    });
+  </script>
 </body>
 </html>
